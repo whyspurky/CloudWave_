@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudWave</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://w.soundcloud.com/player/api.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/logo.png" alt="CloudWave" width="40">
+            <h1>CloudWave</h1>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Поиск треков...">
+            <button id="search-btn">Найти</button>
+        </div>
+    </header>
 
+    <main>
+        <div id="results" class="track-list"></div>
+    </main>
+
+    <!-- Нижний плеер -->
+    <footer id="player-bar" class="player-bar">
+        <div class="now-playing">
+            <img id="player-cover" src="" alt="cover" width="50">
+            <div>
+                <div id="player-title">Выберите трек</div>
+                <div id="player-artist"></div>
+            </div>
+        </div>
+        <button id="play-pause-btn">▶️</button>
+        <div class="progress-container">
+            <div id="progress-bar" class="progress-bar"></div>
+        </div>
+    </footer>
+
+    <!-- Скрытый SoundCloud Widget -->
+    <iframe id="soundcloud-widget" width="100%" height="0" frameborder="no" scrolling="no" allow="autoplay" style="display:none;"></iframe>
+
+    <script src="js/storage.js"></script>
+    <script src="js/soundcloud.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
