@@ -3,7 +3,7 @@
 let widget = null;
 let currentTrack = null;
 
-const CLIENT_ID = "YOUR_CLIENT_ID_HERE";   // ← Замени на свой Client ID!
+const CLIENT_ID = "ceeWbO4nf8MvuTeipNw0E3Lkh3NNxzMy";   // ← Замени на свой Client ID!
 
 // Инициализация виджета
 function initWidget() {
